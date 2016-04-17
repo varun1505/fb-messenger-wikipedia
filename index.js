@@ -62,5 +62,5 @@ var sendMessage = function(to, msgTxt) {
 }
 
 httpServer.listen(conf.PORT, function() {
-	console.log("Express listening on " + port);
+	console.log("Express listening on " + conf.PORT);
 });
