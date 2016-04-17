@@ -89,7 +89,7 @@ app.post('/webhook/', function(req, res){
 						// get page summary
 						page.summary().then(function(summary){
 							//res.send(summary);
-							sendMessage(senderId, summary);
+							sendMessage(senderId, summary.substr(0,315) + '...');
 						})
 						
 					})
