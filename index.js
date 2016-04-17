@@ -45,7 +45,7 @@ var sendMessage = function(to, msgTxt) {
 			id: to
 		},
 		msg: {
-			text: msgText	
+			text: msgTxt	
 		}		
 	};
 
