@@ -10,6 +10,7 @@
     "compression": "~1.6.1",
     "express": "~4.13.4",
     "request": "~2.71.0",
+    "wikijs": "^0.1.3",
     "wikipedia-js": "latest"
   }
 }
