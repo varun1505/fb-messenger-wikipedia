@@ -1,0 +1,8 @@
+var conf = {
+	PORT: '3000',	
+	VERIFICATION_TOKEN: 'your fb token',
+	PAGE_TOKEN: 'your page token',
+	FB_URL: 'https://graph.facebook.com/v2.6/me/messages'
+};
+
+module.exports = conf;
