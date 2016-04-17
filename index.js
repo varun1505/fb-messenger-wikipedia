@@ -13,6 +13,7 @@ app.use(bodyParser.json());
 var httpServer = http.createServer(app);
 
 app.get('/', function (req, res, next) {
+	console.log(conf);
   res.send('Welcome to Facebook Messenger Bot. This is root endpoint');
 });
 
@@ -44,13 +45,13 @@ var sendMessage = function(to, msgTxt) {
 		recipient: {
 			id: to
 		},
-		msg: {
-			text: msgText	
+		message: {
+			text: msgTxt	
 		}		
 	};
 
 	var reqConf = {
-		url: conf.FB_URL + '?access_token' + conf.PAGE_TOKEN,
+		url: conf.FB_URL + '?access_token=' + conf.PAGE_TOKEN,
 		method: 'POST',
 		json: msgPayload
 	}
